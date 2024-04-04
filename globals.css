@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* global.css converted to Tailwind CSS */
+
+.login {
+  height: calc(100vh - 50px);
+  @apply flex items-center justify-center bg-blue-800; /* Tailwind equivalents */
+}
+
+.wrapper {
+  width: 60%;
+  height: 75%;
+  @apply shadow-xl flex items-center rounded-lg bg-blue-200; /* Tailwind equivalents */
+}
+
+.left,
+.right {
+  @apply flex flex-col; /* Tailwind equivalents */
+}
+
+.center {
+  @apply flex items-center justify-center relative; /* Tailwind equivalents */
+}
+
+.or {
+  @apply border-2 border-gray-300 rounded-full px-2 py-1 text-gray-600 font-bold; /* Tailwind equivalents */
+}
+
+.line {
+  @apply absolute top-0 bottom-0 left-0 right-0 m-auto h-0.5 bg-gray-300; /* Tailwind equivalents */
+}
+
+.loginButton {
+  @apply w-32 py-4 px-6 rounded font-bold mb-8 cursor-pointer; /* Tailwind equivalents */
+}
+
+.google {
+  @apply bg-red-500; /* Tailwind equivalents */
+}
+
+.facebook {
+  @apply bg-blue-500; /* Tailwind equivalents */
+}
+
+input {
+  @apply w-48 py-4 px-5 mb-8 rounded border border-gray-500; /* Tailwind equivalents */
+}
+
+.submit {
+  @apply w-48 py-4 px-5 bg-orange-500 text-white font-bold rounded cursor-pointer; /* Tailwind equivalents */
+}
+
+.loginTitle {
+  @apply absolute top-32 text-black font-bold; /* Tailwind equivalents */
+}
+
+.link {
+  @apply text-blue-500 no-underline; /* Tailwind equivalents */
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    @apply w-3/4 h-5/6 flex flex-col; /* Tailwind equivalents */
+  }
+
+  .center {
+    @apply w-full relative mb-8 mt-12; /* Tailwind equivalents */
+  }
+
+  .left {
+    @apply p-4 mb-8 mt-6; /* Tailwind equivalents */
+  }
+
+  .right {
+    @apply mt-12 p-4; /* Tailwind equivalents */
+  }
+
+  .line {
+    @apply h-0.5 w-48; /* Tailwind equivalents */
+  }
+}
+
+@media (max-width: 340px) {
+  .center {
+    @apply hidden; /* Tailwind equivalents */
+  }
+  input {
+    @apply w-24; /* Tailwind equivalents */
+  }
+  .submit {
+    @apply w-24; /* Tailwind equivalents */
+  }
+}
